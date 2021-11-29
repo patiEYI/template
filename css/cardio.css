@@ -564,7 +564,7 @@ section {
 .img-compatible{
     /* display: inline-block; */
     position: relative;
-    top: 110px;
+    top: 140px;
     z-index: 10;
     /* left:700px ; */
 }
