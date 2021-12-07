@@ -59,27 +59,26 @@
 	<div class="preloader">
 		<img src="https://tympanus.net/Freebies/Cardio/img/loader.gif" alt="Preloader image">
 	</div>
-	<nav class="navbar">
+	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><img src="img/logo.png" data-active-url="img/logo-active.png" alt=""></a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<div class="collapse navbar-collapse" id="navbar">
 				<ul class="nav navbar-nav navbar-right main-nav">
-					<li><a href="#intro"><i class="fa fa-home"></i></a></li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#competences">Compétences</a></li>
-					<li><a href="#team">Portfolio</a></li>
-					<li><a href="#about">A propos</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a class="close-link active" href="#intro"><i class="fa fa-home"></i></a></li>
+					<li><a class="close-link" href="#services">Services</a></li>
+					<li><a class="close-link" href="#competences">Compétences</a></li>
+					<li><a class="close-link" href="#team">Portfolio</a></li>
+					<li><a class="close-link" href="#about">A propos</a></li>
+					<li><a class="close-link" href="#contact">Contact</a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -114,7 +113,7 @@
 							<div class="item over">
 								<div class="schedule-row row">
 									<div class="col-xs-6">
-										<h5 class="regular white">Hebergement</h5>
+										<h5 class="regular white"><i class="fas fa-plus blue"></i> Hebergement</h5>
 									</div>
 									<div class="col-xs-6 text-right">
 										<h5 class="white">12mois</h5>
@@ -122,7 +121,7 @@
 								</div>
 								<div class="schedule-row row">
 									<div class="col-xs-6">
-										<h5 class="regular white">Nom de domaine</h5>
+										<h5 class="regular white"><i class="fas fa-plus blue"></i> Nom de domaine</h5>
 									</div>
 									<div class="col-xs-6 text-right">
 										<h5 class="white">12mos</h5>
@@ -130,7 +129,7 @@
 								</div>
 								<div class="schedule-row row">
 									<div class="col-xs-6">
-										<h5 class="regular white">Email pro</h5>
+										<h5 class="regular white"><i class="fas fa-plus blue"></i> Email pro</h5>
 									</div>
 									<div class="col-xs-6 text-right">
 										<h5 class="white">12mois</h5>
@@ -206,7 +205,7 @@
 				</div>
 				<div class="col-md-4" data-aos="fade-right" data-aos-duration="3000">
 					<div class="intro-table intro-table-third">
-						<h5 class="white heading bold ">PRISE DE CONTACT</h5>
+						<h5 class="white heading bold over">PRISE DE CONTACT</h5>
 						<div class="owl-testimonials bottom">
 							<div class="item ">
 								<h4 class="white heading content over">Discutons ensemble de votre projet ur d'un ☕</h4>
@@ -269,13 +268,13 @@
 			<h2 class="text-center white">Compétences</h2>
 			<div class="row">
 			  <div class="col-md-6" data-aos="fade-left" data-aos-duration="5000">
-				<h3 class="white">Mes connaissances en développement web</h3>
+				<h3 class="white light muted h1 bold">Mes connaissances en développement web</h3>
 				<p class="white"><i class="fas fa-plus blue"></i> Site vitrine, boutique en ligne, portfolio, newsletters</p>
-				<small class="white competence-item"> CMS : #Worldpress, #Shopify, #Dropizi</small>
+				<small class="white competence-item"> #Html, CMS : #Worldpress, #Shopify, #Dropizi</small>
 				<p class="white"><i class="fas fa-plus blue"></i> Dynamisme et animation des pages web</p>
 				<small class="white competence-item"> #Css, #javascript, #jquery</small>
 				<p class="white"><i class="fas fa-plus blue"></i> Application web, APPI REST, Base de données</p>
-				<small class="white competence-item"> #Vue.js #Mysql, #PHP, #AJAX, #Node.js, #MongoDB</small>
+				<small class="white competence-item"> #Vue.js, #Mysql, #AJAX, #Node.js, #MongoDB</small>
 				
 				<p class="white"><i class="fas fa-plus blue"></i> Amélioration la visibilité du site dans les résultats de recherche: SEO </p>
 				<small class="white competence-item"> Accessibilité & Mise en place des pages HTML dans le respect des normes W3C & (WCAG) 2.2.</small><br><br>
@@ -318,10 +317,10 @@
 	</section>
 	<section id="compatible" class="text-center " data-aos="zoom-out-up" data-aos-duration="4000">
 		
-		<div class="compatible container">
+		<div class="compatible container-fluid">
 			<div class="row" >
 				<h2 class=" text-center compatible-heading white">Site web compatible avec tous les supports</h2>
-				<p class="compatible-p white">Ordinateur, Tablette, Téléphone</p>
+				<p class="compatible-p white h2 bold">Ordinateur, Tablette, Téléphone</p>
 				<ul class="compatible-ul white text-center">
 					<li><p class="white">Ordinateur</p></li>
 					<li><p class="white">Tablette</p></li>
@@ -338,14 +337,15 @@
 			<div class="zero-espace">
 				<div class="row title text-center">
 					<h2 class="">Mes réalisations </h2>
-					<h4 class="light muted">Une partie des projets sur lesquels j'ai eu l'honneur de travailler</h4>
+					<h3 class="light muted h2 bold">Une partie des projets sur lesquels j'ai eu l'honneur de travailler</h3>
 				</div><br>
 				<!-- 1 -->
 				<div class="row">
 					<div class="col-lg-4">
 						<div class="team text-center">
-							<div class="cover border" style="background:url('img/voyage-Macbook\ Pro\ 2016.png'); background-size:cover;">
+							<div class="cover border" style="background:url('img/Capture\ d’écran\ \(35\)-Surface\ Book\ \(1\).png'); background-size:cover;">
 								<div class="overlay text-center">
+									<h2 class="white"><i class="fa fa-check" aria-hidden="true"></i></h2>
 									<h3 class="white"> Agence de voyage</h3>
 									<h5 class="light light-white"> Developement web</h5>
 								</div>
@@ -356,6 +356,7 @@
 						<div class="team text-center">
 							<div class="cover" style="background:url('img/Capture\ d’écran\ \(20\)-Surface\ Book.png') ;background-size:cover;">
 								<div class="overlay text-center">
+									<h2 class="white"><i class="fa fa-check" aria-hidden="true"></i></h2>
 									<h3 class="white">Boutique en ligne</h3>
 									<h5 class="light light-white"> Developement web</h5>
 								</div>
@@ -366,6 +367,7 @@
 						<div class="team text-center">
 							<div class="cover" style="background:url('img/Capture\ d’écran\ \(21\)-Surface\ Book.png');background-size:cover;">
 								<div class="overlay text-center">
+									<h2 class="white"><i class="fa fa-check" aria-hidden="true"></i></h2>
 									<h3 class="white">Agence de nettoyage</h3>
 									<h5 class="light light-white"> Developement web</h5>
 								</div>
@@ -379,6 +381,7 @@
 						<div class="team text-center">
 							<div class="cover" style="background:url('img/Capture\ d’écran\ \(22\)-Surface\ Book.png'); background-size:cover;">
 								<div class="overlay text-center">
+									<h2 class="white"><i class="fa fa-check" aria-hidden="true"></i></h2>
 									<h3 class="white"> Agence web</h3>
 									<h5 class="black light-white"> Developement web</h5>
 								</div>
@@ -389,6 +392,7 @@
 						<div class="team text-center">
 							<div class="cover" style="background:url('img/Capture\ d’écran\ \(23\)-Surface\ Book.png'); background-size:cover;">
 								<div class="overlay text-center">
+									<h2 class="white"><i class="fa fa-check" aria-hidden="true"></i></h2>
 									<h3 class="white">Site vitrine</h3>
 									<h5 class="light light-white"> Developement web</h5>
 								</div>
@@ -399,6 +403,7 @@
 						<div class="team text-center">
 							<div class="cover" style="background:url('img/cv1-Macbook\ Pro\ 2016.png'); background-size:cover;">
 								<div class="overlay text-center">
+									<h2 class="white"><i class="fa fa-check" aria-hidden="true"></i></h2>
 									<h3 class="white">CV en ligne</h3>
 									<h5 class="light light-white"> Developement web</h5>
 								</div>
@@ -412,6 +417,7 @@
 						<div class="team text-center">
 							<div class="cover" style="background:url('img/Capture\ d’écran\ \(25\)-Surface\ Book.png'); background-size:cover;">
 								<div class="overlay text-center">
+									<h2 class="white"><i class="fa fa-check" aria-hidden="true"></i></h2>
 									<h3 class="white"> Site de présentation</h3>
 									<h5 class="black light-white"> Developement web</h5>
 								</div>
@@ -422,6 +428,7 @@
 						<div class="team text-center">
 							<div class="cover" style="background:url('img/Capture\ d’écran\ \(27\)-Surface\ Book.png'); background-size:cover;">
 								<div class="overlay text-center">
+									<h2 class="white"><i class="fa fa-check" aria-hidden="true"></i></h2>
 									<h3 class="white"> APPI restaurant</h3>
 									<h5 class="light light-white"> Developement web</h5>
 								</div>
@@ -432,6 +439,7 @@
 						<div class="team text-center">
 							<div class="cover" style="background:url('img/Capture\ d’écran\ \(26\)-Surface\ Book.png'); background-size:cover;">
 								<div class="overlay text-center">
+									<h2 class="white"><i class="fa fa-check" aria-hidden="true"></i></h2>
 									<h3 class="white">Boutique en ligne</h3>
 									<h5 class="light light-white"> Developement web</h5>
 								</div>
@@ -445,6 +453,7 @@
 						<div class="team text-center">
 							<div class="cover" style="background:url('img/mockuper-Surface\ Book.png'); background-size:cover; ">
 								<div class="overlay text-center">
+									<h2 class="white"><i class="fa fa-check" aria-hidden="true"></i></h2>
 									<h3 class="white"> Carte de visite</h3>
 									<h5 class="black light-white"> Mockup</h5>
 								</div>
@@ -455,6 +464,7 @@
 						<div class="team text-center">
 							<div class="cover" style="background:url('img/Capture\ d’écran\ \(30\)-Surface\ Book.png'); background-size:cover;">
 								<div class="overlay text-center">
+									<h2 class="white"><i class="fa fa-check" aria-hidden="true"></i></h2>
 									<h3 class="white"> Portfolio en ligne</h3>
 									<h5 class="light light-white"> Template Worldpress</h5>
 								</div>
@@ -465,8 +475,45 @@
 						<div class="team text-center">
 							<div class="cover" style="background:url('img/fly-Surface\ Book.png'); background-size:cover;">
 								<div class="overlay text-center">
+									<h2 class="white"><i class="fa fa-check" aria-hidden="true"></i></h2>
 									<h3 class="white">flyers</h3>
 									<h5 class="light light-white"> Template flyers</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 5 -->
+				<div class="row">
+					<div class="col-lg-4 ">
+						<div class="team text-center">
+							<div class="cover" style="background:url('img/Capture\ d’écran\ \(34\)-Surface\ Book.png'); background-size:cover; ">
+								<div class="overlay text-center">
+									<h2 class="white"><i class="fa fa-check" aria-hidden="true"></i></h2>
+									<h3 class="white"> Mockup</h3>
+									<h5 class="black light-white"> Graphisme </h5>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 ">
+						<div class="team text-center">
+							<div class="cover" style="background:url('img/Capture\ d’écran\ \(37\)-Surface\ Book.png'); background-size:cover;">
+								<div class="overlay text-center">
+									<h2 class="white"><i class="fa fa-check" aria-hidden="true"></i></h2>
+									<h3 class="white"> Portfolio en ligne</h3>
+									<h5 class="light light-white"> Developement web</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 ">
+						<div class="team text-center">
+							<div class="cover" style="background:url('img/Capture\ d’écran\ \(33\)-Surface\ Book.png'); background-size:cover;">
+								<div class="overlay text-center">
+									<h2 class="white"><i class="fa fa-check" aria-hidden="true"></i></h2>
+									<h3 class="white"> Site de présentation</h3>
+									<h5 class="light light-white"> Développement web</h5>
 								</div>
 							</div>
 						</div>
@@ -477,13 +524,13 @@
 	</section>
 	<section class="container-fluid infos " id="infos">
 		<div class=" packs-bginfo row" data-aos="fade-left" data-aos-duration="5000">
-			<h3 class="text-center pack-h3 white">Particuliers, PME, PMI, recevez votre site clé en main à des tarifs abordables</h3>
+			<h3 class="text-center pack-h3 white h2 bold">Particuliers, PME, PMI, recevez un site de qualité, clé en main à des tarifs abordables</h3>
 			<ul class="list-inlin text-center">
-				<li class="white"><i class="fas fa-pencil-ruler fas" aria-hidden="true"></i> Conception, Design, animation</li>
-				<li class="white"><i class="fas fa fa-rocket  fas" aria-hidden="true"></i> Référencement naturel / SEO</li>
-				<li class="white"><i class="fas fa-tools  fas" aria-hidden="true"></i> Maintenance, sécurité</li>
-				<li class="white"><i class="fa fa-laptop " aria-hidden="true"></i> Formation</li>
-				<li class="white"><i class="fa fa-history" aria-hidden="true"></i> Conseils</li>
+				<li class="white bold"><i class="fas fa-pencil-ruler fas" aria-hidden="true"></i> Conception, Design, animation</li>
+				<li class="white bold"><i class="fas fa fa-rocket  fas" aria-hidden="true"></i> Référencement naturel / SEO</li>
+				<li class="white bold"><i class="fas fa-tools  fas" aria-hidden="true"></i> Maintenance, sécurité</li>
+				<li class="white bold"><i class="fa fa-laptop " aria-hidden="true"></i> Formation</li>
+				<li class="white bold"><i class="fa fa-history" aria-hidden="true"></i> Conseils</li>
 				
 
 			</ul>
@@ -493,16 +540,16 @@
 		<div class="container">
 			<div class="row text-center ">
 				<h2 class="display-3 my-5"> Tarifs </h2>
-			   <h4 class="light muted">Une Idée, un projet ? Particulier, PME, PMI, <br>n'hésitez pas à me demander un devis ! 100% gratuit !</h4>
+			   <h4 class="light muted h3 bold"> Les offres sont ajustés selon <strong class="blue"> votre projet!</strong> </h4>
 			</div>
 			
 			<div class="row">
-				<div class="col-md-4 col pack" data-aos="flip-left" data-aos-duration="3000">
+				<div class="col-md-4 col pack pack-un" data-aos="flip-left" data-aos-duration="3000">
 					<h3 class="heading text-center pack-heading">Site vitrine</h3>
 					<h5 class="text-center "> Site de présentation | Cv | Portfolio</h5>
 					<p class="text-center blue">Worldpress</p>
 					<h5 class="text-center">A partir de</h5>
-					<h3 class="text-center price h2">* 700€</h3>
+					<h3 class="text-center price h1">*500€</h3>
 					<ul class="list-group">
 						<li class="list-group-item graybg"><i class="fas fa-plus blue"></i> Charte graphique</li>
 						<li class="list-group-item "><i class="fas fa-plus blue"></i> Proposition de Logo</li>
@@ -527,7 +574,7 @@
 					<h5 class="text-center "> Droppshipping | Boutique à stock</h5>
 					<p class="text-center blue">Shopify, Dropizi, Worldpress</p>
 					<h5 class="text-center">A partir de</h5>
-					<h3 class="text-center price h2">* 1200€</h3>
+					<h3 class="text-center price h1">*1200€</h3>
 					<ul class="list-group ">
 						<li class="list-group-item graybg"><i class="fas fa-plus blue"></i> Charte graphique</li>
 						<li class="list-group-item "><i class="fas fa-plus blue"></i> Proposition de Logo</li>
@@ -552,7 +599,7 @@
 				<div class="col-md-4 col col-12 pack" data-aos="flip-left" data-aos-duration="3000">
 					<h3 class="heading text-center pack-heading">Maintenance</h3>
 					<h5 class="text-center black">30 €/H ou</h5>
-					<h3 class="text-center price h2"> * 250€ /an.</h3>
+					<h3 class="text-center price h1"> *250€ /an.</h3>
 					<ul class="list-group">
 						<li class="list-group-item graybg"><i class="fas fa-plus blue"></i> Mise à jour du site web</li>
 						<li class="list-group-item "><i class="fas fa-plus blue"></i> Petites modifications du contenu (image & textes & animation)</li>
@@ -561,10 +608,10 @@
 					</ul>
 					<div class="text-center"><a href="mailto:messaneyipatricia@gmail.com"><button class="btn btn-blue-fill expand"> Me contacter</button></a></div>
 				</div>
-				<div class="col-md-4 col pack" data-aos="flip-left" data-aos-duration="3000">
+				<div class="col-md-4 col pack pack-un" data-aos="flip-left" data-aos-duration="3000">
 					<h3 class="heading text-center pack-heading">Plus</h3>
 					<h5 class="text-center black"> Pour tout autre demande<br> en developement web</h5>
-					<h3 class="text-center price h2"> * 30€ /H.</h3>
+					<h3 class="text-center price h1"> *30€ /H.</h3>
 					<ul class="list-group">
 						<li class="list-group-item graybg"><i class="fas fa-plus blue"></i> Refonte d'un site internet</li>
 						<li class="list-group-item "><i class="fas fa-plus blue"></i> Amélioration du contenu d'une boutique e-commerce, site vitrine..</li>
@@ -582,41 +629,56 @@
 			    <h2 class="text-center white">Contactez moi !</h2>
 			    <div class="shadow-lg p-4 mx-auto " id="contact-form">
 				    <div class="row">
-						<div class="col-md-8 col-md-offset-2">
-				
-						<form class="contact-form php-mail-form" role="form" action="send.php" method="POST" data-aos="fade-right" data-aos-duration="3000">
-				
-							<div class="form-group">
-							    <input type="name" name="name" class="form-control" id="contact_name" placeholder="Votre nom" data-rule="minlen:4" data-msg="Quatre caractères minimun svp !" required>
-							    <div class="validate"></div>
+						<div class="col-md-6" data-aos="fade-right" data-aos-duration="3000">
+							<h3 id="about" class="widget-title 	white"> A propos</h3>
+							<div class="widget-body">
+								<p>Assistante manager dans le secteur du commerce depuis 2012, ma passion pour la création de site internet à pris le dessus en 2018. Dès lors je me suis formé à divers languages et framework informatique. 
+									J'ai acquis de l'expérience au fil des projet réalisé pour mon réseau. Les bugs, les blocages, les pannes, plus rien ne m'arrete. Je suis devenue une Developpeuse web indépendante en 2020 et
+									j'adore ça. 
+								</p>
+								<p>Créative, passionnée par les interfaces utilisateurs (animation d'interfaces) et en veille permanente technologique, je suis une adepte de l'accessibilité du web à toutes et à tous. 
+									Aussi je développe des sites vitrines, boutique e-commerce (Dopshipping | boutique avec du stock) 
+								    web à partir de CMS tels que Worldpress, Shopify, Dropizi. Je crée également des sites web et application avec du Vuejs, #javascript, #Nodejs, #MongoDB, #Bootstrap, #Mysql. N'hésitez pas à me contacter pour plus d'informations.</p>
 							</div>
-							<div class="form-group">
-							    <input type="email" name="email" class="form-control" id="contact_email" placeholder="Votre email" data-rule="email" data-msg="Entrez une adresse email valide !" required>
-							    <div class="validate"></div>
+						</div>
+						<div class="col-md-6">
+							<div class="col-md-8 col-md-offset-2">
+					
+								<form class="contact-form php-mail-form" role="form" action="send.php" method="POST" data-aos="fade-left" data-aos-duration="3000">
+						
+									<div class="form-group">
+										<input type="name" name="name" class="form-control" id="contact_name" placeholder="Votre nom" data-rule="minlen:4" data-msg="Quatre caractères minimun svp !" required>
+										<div class="validate"></div>
+									</div>
+									<div class="form-group">
+										<input type="email" name="email" class="form-control" id="contact_email" placeholder="Votre email" data-rule="email" data-msg="Entrez une adresse email valide !" required>
+										<div class="validate"></div>
+									</div>
+									<div class="form-group">
+										<input type="tel" name="email" class="form-control" id="contact_tel" placeholder="Votre numéro de Téléphone" data-rule="minlen:10" data-msg="Veuillez saisir votre numéro de téléphone !" required>
+										<div class="validate"></div>
+									</div>
+									<div class="form-group">
+									<input type="text" name="subject" class="form-control" id="contact_subject" placeholder="Nom de votre projet" data-rule="minlen:4" data-msg="huit caractères minimun !" required>
+									<div class="validate"></div>
+									</div>
+						
+									<div class="form-group">
+									<textarea class="form-control" name="message" id="contact_message" placeholder="Description du projet" rows="5" data-rule="required" data-msg="Merci d'écrire quelques mots sur votre projet"></textarea>
+									<div class="validate"></div>
+									</div>
+						
+									<div class="loading"></div>
+									<div class="error-message"></div>
+									<div class="sent-message white"><h4 class=" white"> Votre message bien été envoyé. Merci!</h4></div>
+						
+									<div class="form-send">
+									<button type="submit" class="btn btn-submit btn-large"><span class="fa fa-send-o"> ENVOYER</span></button>
+									</div>
+						
+								</form>
 							</div>
-							<div class="form-group">
-								<input type="tel" name="email" class="form-control" id="contact_tel" placeholder="Votre numéro de Téléphone" data-rule="minlen:10" data-msg="Veuillez saisir votre numéro de téléphone !" required>
-								<div class="validate"></div>
-							  </div>
-							<div class="form-group">
-							   <input type="text" name="subject" class="form-control" id="contact_subject" placeholder="Nom de votre projet" data-rule="minlen:4" data-msg="huit caractères minimun !" required>
-							   <div class="validate"></div>
-							</div>
-				
-							<div class="form-group">
-							   <textarea class="form-control" name="message" id="contact_message" placeholder="Description du projet" rows="5" data-rule="required" data-msg="Merci d'écrire quelques mots sur votre projet"></textarea>
-							   <div class="validate"></div>
-							</div>
-				
-							<div class="loading"></div>
-							<div class="error-message"></div>
-							<div class="sent-message white"><h4 class=" white"> Votre message bien été envoyé. Merci!</h4></div>
-				
-							<div class="form-send">
-							   <button type="submit" class="btn btn-submit btn-large"><span class="fa fa-send-o"> ENVOYER</span></button>
-							</div>
-				
-						</form>
+						</div>
 				
 					</div>
 				</div>
@@ -630,10 +692,12 @@
 					<div class="col-md-3 widget">
 						<h3 class="widget-title">Contact<span class="open-blink"></span></h3>
 						<div class="widget-body">
-							<p>(+33)0658618609<br>
-								<a href="mailto:#">messaneyipatricia@gmail.com </a><br>
+							<p><strong class="blue">*</strong>(+33)0658618609 <br>
+								<a href="mailto:#"><strong class="blue">*</strong>messaneyipatricia@gmail.com</a><br>
 								<br>
-								21 rue du noyer des belles filles 95140 Garges les gonesse
+								<strong class="blue">*</strong>21 rue du noyer des belles filles 95140 Garges les gonesse
+								<br><br>
+								
 							</p>	
 						</div>
 					</div>
@@ -642,25 +706,17 @@
 						<h3 class="widget-title">Suivez-moi sur</h3>
 						<div class="widget-body">
 							<p class="follow-me-icons">
-								<a href=""><i class="fa fa-linkedin fa-2"></i></a>
-								<!-- <a href=""><i class="fa fa-dribbble fa-2"></i></a> -->
-								<a href=""><i class="fa fa-github fa-2"></i></a>
-								<a href=""><i class="fa fa-intagram fa-2"></i></a>
+								<a href="https://www.linkedin.com/in/patriciamessan/" target="blank"><i class="fa fa-linkedin fa-2"></i></a>
+								<a href="https://github.com/patiEYI" target="blank"><i class="fa fa-github fa-2"></i></a>
+								<!-- <a href=""><i class="fa fa-intagram fa-2"></i></a> -->
+								<a href="#intro"><img class="myphoto" src="img/IMG_20210412_170610_615.jpg" alt="photo de patricia messan"></a>
 							</p>	
 						</div>
 					</div>
 
 					<div class="col-md-6 widget">
-						<h3 id="about" class="widget-title">A propos</h3>
-						<div class="widget-body">
-							<p>Assistante manager dans le secteur du commerce depuis 2012, ma passion pour la création de site internet à pris le dessus en 2018. Dès lors je me suis formé aux languages et technologique informatique. 
-								J'ai acquis de l'expérience au fil des projet réalisé pour mon réseau. Les les bugs, les blocages, les pannes, plus rien ne m'arrete. Je suis devenue une Developpeuse web indépendante en 2020 et
-								j'adore ça. 
-							</p>
-							<p>Créative, passionnée par les interfaces utilisateurs (animation d'interfaces) et en veille permanente technologique, je suis une adepte de l'accessibilité du web à toutes et à tous. 
-								Aussi je développe des sites vitrines, boutique e-commerce (Dopshipping) et 
-								applications web à partir de CMS ou de Vue.js, Javascript, Bootstrap, Node.js, MongoDB. Les tarifs sont ajustés selon votre projet. N'hésitez pas à me contacter pour plus d'informations.</p>
-						</div>
+						<h3 id="about" class="widget-title">Retrouvez-moi ici</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2618.6751859009846!2d2.3987831157163404!3d48.978707200181525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66a4a6104220d%3A0x71b53b7ce957e59!2s21%20Rue%20Noyer%20des%20Belles%20Filles%2C%2095140%20Garges-l%C3%A8s-Gonesse!5e0!3m2!1sfr!2sfr!4v1638871644840!5m2!1sfr!2sfr" height="250px" style="border:0;width: 100%;" allowfullscreen="" loading="lazy"></iframe>
 					</div>
 					<small class="col text-center bg-black">
 						Copyright &copy; 2021, Patricia Messan. Tout droits réservés
@@ -672,11 +728,11 @@
 	</footer>	
 				
 	<!-- Holder for mobile navigation -->
-	<!-- <div class="mobile-nav">
+	<div class="mobile-nav">
 		<ul>
 		</ul>
 		<a href="#" class="close-link"><i class="arrow_up"></i></a>
-	</div> -->
+	</div>
 	<!-- Scripts -->
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
