@@ -6,9 +6,7 @@ body {
 	color: #2a3237;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-position: center;
 }
-
 .parallax {
 	position: absolute;
 	overflow: hidden;
@@ -337,7 +335,6 @@ section {
 
 .intro-table-hover:hover {
 	background-image: url('../img/percent-g99e1d88ee_640.png');
-    /* background: linear-gradient( rgba(0, 0, 0, 0.39) ,rgba(0, 0, 0, 0.295)); */
 	background-position: 50% 50%;
 }
 
@@ -712,11 +709,12 @@ ul {
   .contact-form input, .contact-form textarea {
     padding: 10px 12px;
     border-radius: 0;
-    box-shadow: 0px 1px 6px 0.5px #8c949471;
+    box-shadow: 1px 1px 6px 3px #12131371;
     font-size: 1.7rem;
     height: auto;
-	border-radius: 30px;
-	background-color: #ccc;
+	border-radius: 10px;
+	color: #ccc;
+	background-color: rgba(0, 172, 252, 0.295);
   }
   
   .contact-form .form-send {
@@ -724,10 +722,11 @@ ul {
   }
   
   .contact-form .form-send button {
-    background-color: #ccc;
+    background-color: rgba(0, 172, 252, 0.473);
     border: none;
     padding: 12px 40px;
-    color: #333;
+	box-shadow: 1px 1px 6px 3px #12131371;
+    color: #ccc;
     transition: 0.4s;
     cursor: pointer;
     font-size: 16px;
@@ -986,12 +985,6 @@ footer .open-blink {
 
 
 @media(max-width: 768px) {
-	/* #intro, #competences, #compatible, #infos, #team, #packs, #contact, #footer, #section-un, #services{
-		position: inherit;
-		margin: 0 auto;
-	} */
-	body{position: initial;
-		margin: 0 auto;}
 	.img-responsive{
 		width: 450px;
 		
@@ -1005,17 +998,16 @@ footer .open-blink {
 }
 
 @media(max-width: 425px) {
-	body{width: auto;}
+	body{
+		position: initial;
+		margin-left: 0 auto;
+	    margin-right: 0 auto;
+		left: 0px;right: 0px;
+	}
 	.img-compatible{
 		top: -180px;
 		width: 350px;
 		right: -30px;
-	}
-	.main-nav{
-		/* position: static; */
-		display:inline-block;
-		visibility: visible;
-		border-color: lightcoral;
 	}
 	.team .cover .overlay{
 		height: 210px;
