@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 body {
-	/* font-family: 'Roboto', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif; */
     font-family: 'Lato', sans-serif;
 	overflow-x: hidden;
 	color: #2a3237;
@@ -57,7 +56,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Roboto', 'Avenir Next', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+	font-family: 'Lato', sans-serif;
 	position: relative;
 	margin: 10px 0;
 }
@@ -383,11 +382,11 @@ section {
 
 .intro-tables .intro-table .heading {
 	margin: 0;
-	padding:25px 30px;
+	padding:25px 20px;
 }
 
 .intro-tables .intro-table .small-heading {
-	margin: 0;
+	margin: 0 0 0px 15px;
 	padding: 0 20px;
 }
 
@@ -410,52 +409,17 @@ section {
 	margin-top: 50px;
 }
 
-.ripple-effect {
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	background: white;
-	-webkit-animation: ripple-animation 2s;
-	animation: ripple-animation 2s;
-}
-
-@-webkit-keyframes ripple-animation {
-	from {
-		opacity: 0.2;
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-	to {
-		opacity: 0;
-		-webkit-transform: scale(100);
-		transform: scale(100);
-	}
-}
-
-@keyframes ripple-animation {
-	from {
-		opacity: 0.2;
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-	to {
-		opacity: 0;
-		-webkit-transform: scale(100);
-		transform: scale(100);
-	}
-}
 .services {
 	margin: 40px 0;
 }
 
 .service {
-	/* width: 100%; */
 	height: 320px;
 	margin: 80px 0;
 	text-align: center;
 	border: 1px solid #ddd;
     background-color: #fff;
+	box-shadow: 0px 1px 6px 0.5px #8c949471;
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
@@ -467,7 +431,6 @@ section {
 	margin-bottom: 40px;
 	padding: 10px;
 	background: white;
-	box-shadow: 0px 1px 6px 0.5px #8c949471;
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
@@ -591,14 +554,6 @@ section {
 	position: relative;
 	top: 20%;
 }
-/* .team h3{
-	position: relative;
-	top: 50%;
-}
-.team h5{
-	position: relative;
-	top: 50%;
-} */
 .team {
 	background: white;
 	box-shadow: 0px 1px 6px 0.5px #8c949471;
@@ -631,7 +586,6 @@ section {
     border: none;
     margin: 10px;
     border-radius: 20px;
-    /* background-color: #00acfc57; */
     padding: 0;
 	box-shadow: 0px 1px 6px 0.5px #8c949471;
 }
@@ -743,18 +697,6 @@ ul {
     font-weight: 400;
     font-size: 13px;
   }
-  
-  /* .contact-form .loading:before {
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    border: 3px solid #18d26e;
-    border-top-color: #eee;
-    -webkit-animation: animate-loading 1s linear infinite;
-    animation: animate-loading 1s linear infinite;
-  } */
 
 /* Footer */
 footer .open-blink {
@@ -774,18 +716,6 @@ footer .open-blink {
 	animation-iteration-count: infinite;
 }
 
-/* footer .open-blink:before {
-	content: ' ';
-	position: absolute;
-	top: -8px;
-	left: -8px;
-	display: inline-block;
-	width: 30px;
-	height: 30px;
-	opacity: 0.1;
-	border-radius: 50%;
-	background-color: #00a8ff;
-} */
 /* Footer */
 .footer1 { background:#f2f2f2 ; padding: 30px 0 0 0; font-size: 12px; color: #232323; }
     .footer1 .row {box-shadow: 0px 1px 6px 0.5px #8c949471;padding-top: 15px;}
@@ -954,10 +884,6 @@ footer .open-blink {
 	color: #00a8ff;
 }
 
-.blue-bg {
-	background: #00a8ff;
-}
-
 .muted {
 	color: #7c8d97;
 }
@@ -985,6 +911,11 @@ footer .open-blink {
 
 
 @media(max-width: 768px) {
+	body{
+		margin: 0 auto;
+		display: inline-block;
+		width: 100% !important;
+	}
 	.img-responsive{
 		width: 450px;
 		
@@ -998,12 +929,6 @@ footer .open-blink {
 }
 
 @media(max-width: 425px) {
-	body{
-		position: initial;
-		margin-left: 0 auto;
-	    margin-right: 0 auto;
-		left: 0px;right: 0px;
-	}
 	.img-compatible{
 		top: -180px;
 		width: 350px;
@@ -1030,6 +955,12 @@ footer .open-blink {
 	   display: none;
 	   visibility: hidden;
 	}
+	.intro-tables .intro-table {
+		position: relative;
+		width: auto;
+		height: 360px;
+		overflow: hidden;
+	}
 	h1 {
 		font-size: 4rem;
 	}
@@ -1047,12 +978,10 @@ footer .open-blink {
 	}
 	
 }
-@media(max-width: 425px) {
-	.img-compatible{
-		top: -180px;
-		width: 350px;
-		right: 0px;
-	}
+@media(max-width: 320px) {
+.service {
+	height: auto;
+}
 }
 
 
