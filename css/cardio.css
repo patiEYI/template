@@ -3,13 +3,18 @@ body {
     font-family: 'Lato', sans-serif;
 	overflow-x: hidden;
 	color: #2a3237;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	position: static;
+	cursor: pointer;
+	/* -webkit-font-smoothing: antialiased; */
+	/* -moz-osx-font-smoothing: grayscale; */
+}
+section{
+	margin: 0 auto;
 }
 .parallax {
 	position: absolute;
 	overflow: hidden;
-	width: 100% ;
+	width: 100% !important;
 	-webkit-transform: translateZ(0);
 	-ms-transform: translateZ(0);
 	transform: translateZ(0);
@@ -106,7 +111,6 @@ ul.white-list li:before {
 	margin-right: 15px;
 	background: white;
 }
-
 header {
 	position: relative;
 	width: 100%;
@@ -270,6 +274,7 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 .container {
 	position: relative;
 	z-index: 1;
+	zoom: 1;
 	
 }
 /* Sections */
@@ -315,14 +320,14 @@ section {
 	background-position: 0% 0%;
 }
 .intro-table-first {
-	background-image: url('../img/people-g0e9d8c0e5_640.jpg');
+	background-image: url('../img/people-g0e9d8c0e5_640.webp');
    
 }
 
 .intro-table-hover {
 	-webkit-transition: background-image 0.3s ease, background-position 0.3s;
 	transition: background-image 0.3s ease, background-position 0.3s;
-	background-image: url('../img/sunset-gd7af1ab59_640.jpg');
+	background-image: url('../img/sunset-gd7af1ab59_640.webp');
 }
 
 .intro-table-hover h4 {
@@ -333,12 +338,12 @@ section {
 }
 
 .intro-table-hover:hover {
-	background-image: url('../img/percent-g99e1d88ee_640.png');
+	background-image: url('../img/percent-g99e1d88ee_640.webp');
 	background-position: 50% 50%;
 }
 
 .intro-table-third {
-	background-image: url('../img/pen-gfa779709a_640.jpg');
+	background-image: url('../img/pen-gfa779709a_640.webp');
 }
 
 .intro-table-hover .expand {
@@ -513,7 +518,7 @@ section {
 }
 /* responsive img */
 .compatible{
-    background: url('../img/people-g03ecbaf93_1920.png');
+    background: url('../img/people-g03ecbaf93_1920.webp');
     background-attachment: fixed;
 	height: 550px;
 	background-repeat: no-repeat;
@@ -600,7 +605,7 @@ section {
    
 }
 .infos{
-    background: url('../img/smartmockups_kwv33vfo.jpg');
+    background: url('../img/smartmockups_kwv33vfo.webp');
     background-attachment: fixed;
     padding: 10px;
 }
@@ -670,7 +675,21 @@ ul {
 	color: #ccc;
 	background-color: rgba(0, 172, 252, 0.295);
   }
-  
+  .contact-form i{
+	position: relative;
+	top: 33px;left: 15px;margin-right: 10px;
+	font-size: 20px;
+  }
+  .contact-form ::placeholder{
+	position: relative;
+	left: 25px;
+  }
+  .contact-flex{
+	display: inline-flex;	  
+  }
+  .contact-flex label{
+	position: relative;left: 5px;	  
+  }
   .contact-form .form-send {
     text-align: center;
   }
@@ -734,6 +753,9 @@ footer .open-blink {
 		height: 50px;
 		border-radius: 50%;
 	 }
+	.fa-clock-o, .fa-map-marker {
+       position: relative;top: 6px;
+	}
 /* Form Control */
 
 .form-control {
@@ -889,6 +911,9 @@ footer .open-blink {
 }
 
 @media(max-width:1024px) {
+	/* section{
+	    width: 900px !important;
+	} */
 	.team .cover .overlay {
 		height: 470px;
 		margin: 0 auto;
@@ -899,11 +924,18 @@ footer .open-blink {
 		justify-content: space-around;
     }
 	.img-compatible{
-		right: -100px;
+		right: -160px;
+	}
+	.compatible-heading, .compatible-p{
+		top: 80px;
 	}
 	.pack{
 		width: 300px;
 	}
+	.img-responsive{
+		width: 390px;
+		
+	  }
 	
 }
 
@@ -911,15 +943,7 @@ footer .open-blink {
 
 
 @media(max-width: 768px) {
-	body{
-		margin: 0 auto;
-		display: inline-block;
-		width: 100% !important;
-	}
-	.img-responsive{
-		width: 450px;
-		
-	  }
+	
 	.img-compatible{
 		right: -100px;
 	}
@@ -929,10 +953,17 @@ footer .open-blink {
 }
 
 @media(max-width: 425px) {
+	*{
+		margin: 0;padding: 0;
+	}
+	section{
+		position: relative;
+	    width: 100% !important;left: 0 !important;right: 0 !important;
+	}
 	.img-compatible{
 		top: -180px;
 		width: 350px;
-		right: -30px;
+		right: 0px;
 	}
 	.team .cover .overlay{
 		height: 210px;
@@ -946,10 +977,10 @@ footer .open-blink {
 	.compatible-ul{
 		display: block;
 		visibility: visible;
-		position: relative;
-		text-align: center;
+		position: relative;top: 160px;left: 65px;
+		text-align: left;
 		margin: 0 auto;
-		top: 190px;
+		
 	}
 	.compatible-p{
 	   display: none;
@@ -960,6 +991,9 @@ footer .open-blink {
 		width: auto;
 		height: 360px;
 		overflow: hidden;
+	}
+	.service {
+		height: auto;
 	}
 	h1 {
 		font-size: 4rem;
@@ -977,11 +1011,6 @@ footer .open-blink {
 		font-size: 1.8rem;
 	}
 	
-}
-@media(max-width: 320px) {
-.service {
-	height: auto;
-}
 }
 
 

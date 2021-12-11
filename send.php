@@ -11,11 +11,11 @@
     }
 
     // CONDITIONS telephone
-    if ( (isset($_POST["contact_tel"])) && (strlen(trim($_POST["contact_tel"])) > 0) ) {
-        $contact_tel = stripslashes(strip_tags($_POST["contact_tel"]));
+    if ( (isset($_POST["contact_phone"])) && (strlen(trim($_POST["contact_phone"])) > 0) ) {
+        $contact_phone = stripslashes(strip_tags($_POST["contact_phone"]));
     } else {
         echo "Merci d'écrire votre numéro de téléphone ! <br />";
-        $contact_tel = "";
+        $contact_phone = "";
     }
     // nom du projet
     if ( (isset($_POST["contact_subject"])) && (strlen(trim($_POST["contact_subject"])) > 0) ) {
@@ -43,7 +43,14 @@
         echo "Merci d'écrire quelques mots sur votre projet <br />";
         $contact_message = "";
     }
-
+    // condition chechbox
+    // condition answer
+    if ( (isset($_POST["contact_answer"])) && (strlen(trim($_POST["contact_answer"])) != 22) ) {
+        $contact_answer = stripslashes(strip_tags($_POST["contact_answer"]));
+    } else {
+        echo "Merci d'écrire quelques mots sur votre projet <br />";
+        $contact_answer = "";
+    }
     // Les messages d'erreurs ci-dessus s'afficheront si Javascript est désactivé
 
     // PREPARATION DES DONNEES
@@ -52,7 +59,7 @@
     $destinataire = "messaneyipatricia@gmail.com";
     $objet        = "[Agence web] " . $contact_subject;
     $contenu      = "Nom de l'expéditeur : " . $contact_name . "\r\n";
-    $contenu     .= $contact_tel . "\r\n\n";
+    $contenu     .= $contact_phone . "\r\n\n";
     $contenu     .= $contact_message . "\r\n\n";
     $contenu     .= "Adresse IP de l'expéditeur : " . $ip . "\r\n";
     $contenu     .= "DLSAM : " . $hostname;
@@ -65,7 +72,7 @@
 
 
     // SI LES CHAMPS SONT MAL REMPLIS
-    if ( (empty($contact_name )) &&  (empty($contact_subject)) && (empty($contact_tel)) && (empty($contact_email)) && (!filter_var($contact_email, FILTER_VALIDATE_contact_email)) && (empty($contact_message )) ) {
+    if ( (empty($contact_name )) &&  (empty($contact_subject)) && (empty($contact_phone)) && (empty($contact_email)) && (!filter_var($contact_email, FILTER_VALIDATE_contact_email)) && (empty($contact_message )) ) {
         echo 'echec :( <br /><a href="index.html">Retour au formulaire</a>';
     } else {
         // ENCAPSULATION DES DONNEES
