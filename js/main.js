@@ -185,4 +185,13 @@ jQuery(function($) {
             }
         }
     })
+	//nettoyage du formulaire
+    function end () {
+	let EltButton = document.querySelector('#submit');
+	let EltForm = document.querySelector('#contact-form');
+	EltButton.addEventListener(onclick, function(){
+	   EltForm.reset();
+	})
+   }
+   end();
 });

@@ -659,50 +659,50 @@
 						<div class="col-md-6">
 							<div class="col-md-8 col-md-offset-2">
 					
-								<form class="contact-form php-mail-form" role="form" action="send.php" method="POST" data-aos="fade-left" data-aos-duration="3000">
+								<form class="contact-form php-mail-form" id="contact-form" role="form" action="send.php" method="POST" data-aos="fade-left" data-aos-duration="3000">
 						
 									<div class="form-group">
-										<i class="fa fa fa-user-o blue"></i>
-										<input type="name" name="contact_name" class="form-control" id="contact_name" placeholder="Nom /prenom" data-rule="minlen:4" data-msg="Quatre caractères minimun svp !" required>
+										<i class="fa fa-user-o blue"></i>
+										<input type="name" name="contact_name" class="form-control" id="contact_name" placeholder="Nom /prenom" data-rule="minlen:3" data-msg="Ecrivez votre nom ou prénom!" required>
 										<div class="validate"></div>
 									</div>
 									<div class="form-group">
 										<i class="fa fa-at blue"></i>
-										<input type="email" name="contact_email" class="form-control" id="contact_email" placeholder="E-mail" data-rule="email" data-msg="Entrez une adresse email valide !" required>
+										<input type="email" name="contact_email" class="form-control" id="contact_email" placeholder="E-mail" data-rule="email" data-msg="Ecrivez votre adresse email!" required>
 										<div class="validate"></div>
 									</div>
 									<div class="form-group">
 										<i class="fa fa-phone blue"></i>
-										<input type="tel" name="contact_phone" class="form-control" id="contact_phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Téléphone" data-rule="minlen:10" data-msg="Veuillez saisir votre numéro de téléphone !" required>
+										<input type="number" name="contact_phone" class="form-control" id="contact_phone" placeholder="Téléphone" data-rule="minlen:10" data-msg="Ecrivez votre numéro de téléphone !" required>
 										<div class="validate"></div>
 									</div>
 									<div class="form-group">
 										<i class="fa fa-thumbs-o-up blue"></i>  
-									    <input type="text" name="contact_subject" class="form-control" id="contact_subject" placeholder="Nom du projet" data-rule="minlen:4" data-msg="huit caractères minimun !" required>
+									    <input type="text" name="contact_subject" class="form-control" id="contact_subject" placeholder="Nom du projet" data-rule="minlen:2" data-msg="Ecrivez le nom de votre projet !" required>
 									    <div class="validate"></div>
 									</div>
 						
 									<div class="form-group">
-										<label for="contact_message" class="white">Préciser les détailles les plus important de votre projet afin de faciliter nos prochaines échanges</label>
-									   <textarea class="form-control" name="contact_message" id="contact_message"  rows="5" data-rule="required" data-msg="Merci d'écrire quelques mots sur votre projet" required></textarea>
+										<label for="contact_message" class="contact_message">Préciser les détailles les plus important de votre projet afin de faciliter nos prochaines échanges</label>
+									   <textarea class="form-control" name="contact_message" id="contact_message"  rows="5" data-rule="minlen:10" data-msg="Merci d'écrire quelques mots sur votre projet !" required></textarea>
 									   <div class="validate"></div>
 									</div>
 									<div class="form-group contact-flex">
-										<input type="checkbox" name="contact_checkbox" class="checkbox" id="contact_checkbox"  data-rule="checked" data-msg="Veuillez acceptez les conditions d'utilisations !"checked required>
+										<input type="checkbox" name="contact_checkbox" class="checkbox" id="contact_checkbox"  data-rule="required" data-msg="Veuillez acceptez les conditions d'utilisations !"checked required>
 										<label for="contact_checkbox" class="blue"> j'accepte que les informations saisies soit utilisées dans le cadre d'un futur contact pouvant aboutir à une éventuelle relation commerciale</label><br>
 										<div class="validate"></div>
 									</div>
 									<div class="form-group">
 										<i class="fa fa-lock blue" aria-hidden="true"></i> 
-									    <input type="number" name="contact_answer" class="form-control" id="contact_answer" placeholder="11 + 11 = ?" data-rule="minlen:2" data-msg="Une bonne réponse est requise !" required>
+									    <input type="number" name="contact_answer" class="form-control" id="contact_answer" placeholder="11 + 11 = ?" data-rule-range="22" data-msg="Une bonne réponse est requise !" required>
 									    <div class="validate"></div>
 									</div>
 									<div class="loading"></div>
 									<div class="error-message"></div>
-									<div class="sent-message white"><h4 class=" white"> Votre message bien été envoyé. Merci!</h4></div>
+									<div class="sent-message white"><h4 class=" white"> Votre message bien été envoyé. Merci. </h4></div>
 						
 									<div class="form-send">
-									<button type="submit" class="btn btn-submit btn-large"><span class="fa fa-send-o"> ENVOYER</span></button>
+									<button type="submit" class="btn btn-submit btn-large" id="submit"><span class="fa fa-send-o"> ENVOYER</span></button>
 									</div>
 						
 								</form>
@@ -724,7 +724,7 @@
 							<p><strong class="blue"><i class="fa fa-phone"></i></strong><small>(+33)0658618609</small>  <br><br>
 								<a href="mailto:#"><strong class="blue"><i class="fa fa fa-at"></i></strong><small> contact@patricia-messan.com</small></a><br>
 							     <br><small> <i class="fa fa-circle-o-notch blue"></i> Siret: 8009137</small><br>
-								<p class="" href="#intro"><img class="myphoto" src="img/IMG_20210412_170610_615.jpg" alt="photo de patricia messan"></p>
+								<a class="" href="#intro"><img class="myphoto" src="img/IMG_20210412_170610_615.jpg" alt="photo de patricia messan"></a>
 						
 							</p>	
 						</div>
@@ -738,7 +738,7 @@
 								<a href="https://github.com/patiEYI" target="blank"><i class="fa fa-github fa-2"></i></a>
 								<!-- <a href=""><i class="fa fa-intagram fa-2"></i></a> -->
 								
-								<br><small class="contact-flex"><i class="fa fa-clock-o blue"></i></strong>Horaire : 8H - 20h <span class="open-blink"></span></small>
+								<br><small class="contact-flex"><i class="fa fa-clock-o blue"></i></small>Horaire : 8H - 20h <span class="open-blink"></span>
 								<br>
 								<small class="contact-flex"><i class="fa fa fa-map-marker blue"></i> 21 rue du noyer des belles filles 95140 Garges les gonesse</small>
 							</p>	
@@ -773,6 +773,7 @@
 	<script src="js/typewriter.min.js"></script>
 	<script src="js/jquery.onepagenav.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/validate.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 <script>

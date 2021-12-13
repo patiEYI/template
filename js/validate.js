@@ -1,11 +1,11 @@
 jQuery(document).ready(function($) {
     "use strict";
   
-    //Contact
+    //Contact /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/
     $('form.php-mail-form').submit(function() {
       var f = $(this).find('.form-group'),
         ferror = false,
-        emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
+        emailExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/i;
   
       f.children('input').each(function() { // run all inputs
   
@@ -78,6 +78,12 @@ jQuery(document).ready(function($) {
                 ferror = ierror = true;
               }
               break;
+            
+            case '22':
+              if (i.val() !== 22 ) {
+                ferror = ierror = true;
+              }
+              break;
   
             case 'minlen':
               if (i.val().length < parseInt(exp)) {
@@ -88,7 +94,7 @@ jQuery(document).ready(function($) {
           i.next('.validate').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
         }
       });
-      if (ferror) return false;
+      if (ferror = true) return false;
       else var str = $(this).serialize();
       var action = $(this).attr('action');
       if( ! action ) {
@@ -116,6 +122,5 @@ jQuery(document).ready(function($) {
       });
       return false;
     });
-//   str
   });
   
